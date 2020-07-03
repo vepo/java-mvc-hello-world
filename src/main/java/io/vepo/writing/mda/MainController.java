@@ -4,13 +4,13 @@ import javax.mvc.Controller;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
-@Path("hello")
-public class HelloController {
+@Path("/")
+@Controller
+public class MainController {
 
     @GET
-    @Controller
     public String view() {
-        return "hello.jsp";
+        return "main.xhtml";
     }
 
 }
